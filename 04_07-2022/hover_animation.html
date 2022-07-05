@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover animations</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 100%;
+            border: 2px solid black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: royalblue;
+            transition: 3s;
+        }
+        #box1:hover{
+            transform: translate(100px, 100px);
+        }
+        #box2:hover{
+            transform: skew(160deg);
+        }
+        #box3:hover{
+            transform: rotate(160deg);
+        }
+        #box4:hover{
+            transform: rotate3d(1,1,0,240deg);
+        }
+        #box5:hover{
+            transform: scale(1.5,0.5);
+        }
+        #box6:hover{
+            opacity: 0.5;
+        }
+        #box7:hover{
+            box-shadow: 0px 0px 30px red;
+        }
+        #box8:hover{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            transition
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box2">
+            skew
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box3">
+            rotate
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box4">
+            rotate3D
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box5">
+            rotate3D
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box6">
+            opacity
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box7">
+            box-shadow
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box8">
+            border radius
+        </div>
+    </div>
+    
+</body>
+</html>
