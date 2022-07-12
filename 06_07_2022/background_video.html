@@ -28,11 +28,59 @@
             text-align: center;
             font-size: 30px;
         }
+        input{
+            background: none;
+        }
     </style>
 </head>
 <body>
     <video src="../assets/videos/Blossoms - 113004.mp4" autoplay muted loop id="back"></video>
-    <h1>Hello! Good morning</h1>
-    <h2>There is no place like these....</h2>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" name="myName" id="name"> 
+            <!-- name attribute is use for backend -->
+        </div>
+        <br>
+        <div>
+            Surname : <input type="text" name="ySurname" id="surname">
+        </div>
+        <br>
+        <div>
+            Roll No. : <input type="number" name="myRollno" id="roll">
+        </div>
+        <br>
+        <div>
+            Enter your BOD : <input type="date" name="myBod" id="bod">
+        </div>
+        <br>
+        <div>
+            Your eligbel : <input type="checkbox" name="myEligiblity" id="surname">
+        </div>
+        <br>
+        <div>
+            Enter about Your Hobby : <br><textarea name="myHobby" id="Hobby" cols="90" rows="10" style="background: none;"></textarea>
+        </div>
+        <br>
+        <!-- makig multypale choise boxes use radio  -->
+        <div>
+            Gender : Male <input type="radio" name="myGender" id="Gender">
+            Male <input type="radio" name="myGender" id="Gender">
+            Other <input type="radio" name="myGender" id="Gender">
+        </div>
+        <br>
+        <!-- makig multypale choise hover select  -->
+        <div>
+           Select your car : <select name="mycar" id="car">
+                <option value="lemo">Lemborginy</option>
+                <option value="mer">Mercidic</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="Submit Now">
+            <input type="reset" name="Reset Now">
+        </div>
+    </form>
 </body>
 </html>
