@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <h2>Layout1</h2>
+        <style type="text/css">
+            
+			*{font-size:22px;font-weight:bold;}
+			#s1{background-color: white;height: 50px;width: 100%;margin-bottom: 10px;}
+            #s1c1,#s1c2{background-color: white;width: 50%;float: left;padding-left: 0px;}
+            
+            #s2{height:800px;width:100%;}
+			#s2R1,#s2R2,#s2R3,#s2R4{height:190px;margin-bottom:10px;width:100%;}
+			#s2R1 div,#s2R2 div,#s2R3 div,#s2R4 div{height:190px;width:23.5%;margin-right:2%;float:left;background-color:white;}
+			#s2R1 div:last-child,#s2R2 div:last-child,#s2R3 div:last-child,#s2R4 div:last-child{margin-right:0!important;width:23.5%!important;}
+            
+            #s3{height: 200px;width: 100%;margin-bottom: 10px;}
+            #s3c1,#s3c2,#s3c3{width: 100%;height:100px; text-align: center;margin-bottom: 10px; }
+            #s3c1,#s3c2{width: 32.2%;margin-right: 1.8%;float: left; height:100px; padding-top:100px;background-color: white; }
+            #s3c3{width:31.8%;height: 100px;float: left; background-color: blueviolet;padding-top: 100px;}
+            #s3c1 div,#s3c2 div,#s3c3 div{float: left;height: 0px !important;width: 31.8% !important;}
+
+            #s4{background-color:white;height:50px;padding-top:7px;width:100%;text-align: center;}
+        </style>
+    </head>
+    <body>
+       
+        <div id="s1">
+            <div id="s1c1"><img src="data:image/png;base64,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" height="5%"></div>
+            <div id="s1c2">Images</div>
+        </div>
+        <div id="s2">
+            <div id="s2r1">
+                <div id="s2r1c1"><a href="http://google.com"><img src="https://cdn.pixabay.com/photo/2022/06/25/23/41/ladybug-7284337__480.jpg" alt="nature" height="100%"></a></div>
+                <div id="s2r1c2"><img src="https://cdn.pixabay.com/photo/2022/06/25/23/41/ladybug-7284337__480.jpg" alt="nature" height="100%"></div>
+                <div id="s2r1c3"><img src="https://cdn.pixabay.com/photo/2022/06/25/23/41/ladybug-7284337__480.jpg" alt="nature" height="100%"></div>
+                <div id="s2r1c4"><img src="https://cdn.pixabay.com/photo/2022/06/25/23/41/ladybug-7284337__480.jpg" alt="nature" height="100%"></div>
+            </div>
+            <div id="s2r2">
+                <div id="s2r1c1"><a href="http://facebook.com"><img src="https://cdn.pixabay.com/photo/2022/07/12/08/15/grass-7316770__340.jpg" alt="nature" height="100%"></a></div>
+                <div id="s2r2c2"><img src="https://cdn.pixabay.com/photo/2022/07/12/08/15/grass-7316770__340.jpg" alt="nature1" height="100%"></div>
+                <div id="s2r2c3"><img src="https://cdn.pixabay.com/photo/2022/07/12/08/15/grass-7316770__340.jpg" alt="nature1" height="100%"></div>
+                <div id="s2r2c4"><img src="https://cdn.pixabay.com/photo/2022/07/12/08/15/grass-7316770__340.jpg" alt="nature1" height="100%"></div>
+            </div>
+            <div id="s2r3">
+                <div id="s2r3c1"><img src="https://cdn.pixabay.com/photo/2022/06/20/07/32/dirt-road-7273240__340.jpg" alt="nature" height="100%"><a href="http://instagram.com"></a></div>
+                <div id="s2r3c2"><img src="https://cdn.pixabay.com/photo/2022/06/20/07/32/dirt-road-7273240__340.jpg" alt="nature" height="100%"></div>
+                <div id="s2r3c3"><img src="https://cdn.pixabay.com/photo/2022/06/20/07/32/dirt-road-7273240__340.jpg" alt="nature" height="100%"></div>
+                <div id="s2r3c4"><img src="https://cdn.pixabay.com/photo/2022/06/20/07/32/dirt-road-7273240__340.jpg" alt="nature" height="100%"></div>
+            </div>
+        </div>
+        <div id="s3">
+            <div id="s3c1" style="background-color: green;"><a href="http://google.com">google</a></div>
+            <div id="s3c2" style="background-color: cyan;"><a href="http://facebook.com">Facebook</a></div>
+            <div id="s3c3" style="background-color: red;"><a href="http://instagram.com"> Instagram</a></div>
+        </div>
+       
+        <div id="s4">Footer</div>
+    
+        </body>
+</html>

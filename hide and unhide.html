@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#show").click(function () {
+          $("#p1").css("display", "");
+        });
+
+        $("#hide").click(function () {
+          $("#p1").css("display", "none");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+      <button id="hide">Hide</button><br>
+      <p id="p1">This is String</p>
+      <button id="show">Show</button>
+  </body>
+</html>
