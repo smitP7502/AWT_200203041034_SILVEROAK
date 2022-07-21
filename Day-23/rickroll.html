@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script type="text/javascript">
+           function alertinline(){
+               alert("swati")
+
+            }
+            function confirminline(){
+                if(confirm("Are you sure?")){
+                alert("yess")
+                }
+                else{
+                    alert("no")}
+           }
+           function promptinline(){
+               var name= prompt("enter the name ")
+           }
+           function bgcolor()
+           {
+               document.body.style.backgroundImage="url('image/download.jfif')";
+           } 
+           
+           function divBGGray(){
+				document.getElementById("I").style.backgroundColor="Gray";
+            }
+
+
+           function dynamicalert(){
+            document.body.style.backgroundColor=prompt("Enter color name here..");
+           }
+           function divdynamic(){
+				document.body.style.backgroundColor=prompt("enter the color");
+			}
+            function bodyBGCP1(){
+				document.body.style.backgroundColor=document.getElementById("CP1").value;
+			}
+			function divBGCP2(){
+				document.getElementById("I").style.backgroundColor=document.getElementById("CP2").value;
+			}
+            
+        </script>
+        <script src="demo.js" type="text/javascript"></script>
+		<style type="text/css">
+			body{background-color: rgb(132, 99, 248);}
+			div{background-color: rgb(13, 70, 192);height: 300px;width: 300px; }
+           /* div:hover{transform: rotate(90deg); transition:3s;}
+            div:hover{transform: scale(0.5); transition:3s;}*/
+            div:hover{transform: skew(90deg); transition:3s;background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH8A4QMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAAECBAUGB//EADgQAAEEAAQEAwUHAwUBAAAAAAEAAgMRBBIhMQUiQVETMrFhcXOBkQYUIyQ0UqEzQnJiY4TB0VP/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAdEQEBAAIDAQEBAAAAAAAAAAAAAQIRAyExEkEi/9oADAMBAAIRAxEAPwDpcMz8CL4bfREc2qSw36aH4Y9FI6r0p4nDBuyI4BrQAkzQgnVROpQOGRanHHeuUmkg3XdWYxQI0pCiqMYC8XsjANLzpdexRZ5witzEkgJdMgWuynkVadvN0+SsSyObpsq2pdZ1QptoeCTWm6G+E7Uro8gobKJBJHSklFScytwhkLQmhsW02qUjS06hKZXmlZFWc60SAsHjuM8aExhrcoGod3WvxaZuGwb5i1jnCgA8rnZJG4sGV8YaDs0Fedz5ZZZ/M8d3DJjj9VzZ0kJoV2ApTglGV4Gl7BdFHgMNNHzxi0RvBMGRqDfdGcdJd7ZPDMXJDO2RreZuorS16DhpBNAyQUA4XQN0uI4hw/7kwSROJZfXoup+zbi7hTLH9xpW4d435T5PGlQUHAXSKQhnzWutzk9uxCiEdwsBB6rBU09aKCkCsVIUkmCdYlJJJJYNrWH/AEsXw2+ikN02HH5aH4bfRSDdV1BCKScjVNVlCmKtQjBrvCdzIJBBU2v5HNJI7JRDjvN7kbPkB1+qC00oucSgJSOL9SoNFkKTWk9FH+EtNFinVytr2EqBa4u100UYXOL61OimSbN6JRRLW0c7nGvaqc5aSMor2o80gdQBNBVXnQpL0adsL7TZpMNHGACM16rGeTExobrWmpoLYhxTcVxAsxcbS1mYNbWxVHG+A7EvqMZL0HZefZ/dehlx5YSSgYfFZHASM5TsWutaLcTC2Qte4NPS1lvyOmGRrWN0Gi0cRg2ziN2YtLeoVcbSm4o5pwl2KJ3vdbfBR4XDMOCK5bKx2YETyxQPcAHO1oV7V0GUMAa0U0CgOwVcZfrbn5as2CDv9EA+ZPG8xnuD0TONvsK6I7ryghVzd6or5dAAh1Z0RhTnXZNaQSpYKcFOHJhokFk6kmSSRKv4c/lofht9ERCw/wCmh+G30Rmtvorfgw4beymxgFIkYDdqPtTgCzRH1QECVugKCVblAeOlhVDoUNiYhPGzM6uifdEiADSShRh8go5dKQZ2VRFI4fQrQBQlDXADb2oHVQcpsFRmfmPsTvaWmnBDOqWiYpeEcmbREYzUEj5Kbi3Ugb/wkoxzvEuFubOcXC5rerh7VizmyXLr+JPDcFIaBAG65GTLmdr12pcmckrswzuU7VIZsG+Yh781bgLZw5iyA4ZwczrraoRYYuJHhxlh3sBaGHgjiDY4Wht6UFoerWCgdPi2HXKw5ifatzJm0NWoYeKOGINY2u+m6KKJXRjNRy8mW1VzaJBTI0rbdYQk6VJHgYMt6aoLQXaBWY202uqIIujoWhVqrYJ2KFMwHmasUFME6VIxOkkkksRewovDw/4D0VpsZrQkWquENYeI/wC230VqGQl1O+SsaHEBIvOUvu9DzlSLyDQ2TSvc1t99kBDfHlbeZVyb1U3OJOpQybQolTjqAU5a+tijRuAjA6+5TdIBVkfRLs0U3Nf2Kic+1FW3PFtFhRc8X5kuzKbibp24Q3EqWIkzSOpCYecFC0UvxO7lH8Te3UiTYuOBpdI+gOixMR9ooTN4UTt1LLOT08xtX8fnOElbzHM0iguXkilbq6N4vu0rZ4pM/wC6RFpNmnOP8rP+9TubRnkIAOmbRRv9VaZTCaAwzJt2uACvxtc4tAfTiQM3YrMgmLRlJ0C2OFRumk8ctIjYOW+p7o4RXO6x3S4V9oWTyOwuNcIp2EjMTyv/APFthxItrrHcLyriL6xkzm7+ITfzWjw/jczWNaJXNc3ejumvJ83Tkndei5nfuKgd1y0P2plYQHlsgH7lpYX7SYXEmpBkd3bqE8zla4thl3yon4o5gq0U8MwzQSseP9JRxL3VJdksEDpqvolmlPRSEgyjdSzF2iJQHteTZCjaNJK3KW9UC1iWEklaSJNLuF/TQ/Db6KzFVknoq2HoYeH4Y9ETPRBTjFhzw0ajfZBc4u3Ki6QuNqOvZbYndSgNSB7UnWDRTx0Xi9AhsYtHdoTnzb2h8hceY/VRsEk5z9UmzQRx5/coE24gqNi/OfqhFwAPOULTqk7hbiSBV2Vg47j8GHBEbhfcFX+NSmPhmKkB2jK8xc4ucMxv3qPLno81I0OJ8bxGMeQHFrO1qhBK5srHXeU2guNlIGly2h92vQ+LPDMJEw9meizYjbq9ipwcddj5GwyNhi8oBeC6z/0tbG/esBDCXswHNqS4ZSD2BVsbDe9g8N4a+Z4kxDSG75e61eMY2PhnDHubQeW5WC+qoYHik+b8SKBzO7MQ2/osP7UYqTFTRmTDPiAvKTICCPcFSZzGNnncr2w5XFxLibJ1KCHFjszd05KiN+vyXPld1L9WJJAWijqd6TNdINjXuSmws8JYZY3NDtQSN0nEAj2JsRytjR4TjZcDjIp2uJogOF7hekgh7WvGzhY9y8nY85h2XqHCnGTheFe/zGJtrowoTteidmGpRQCPKqm2xpHbJy31VGDfeY2mSJs2mAWJTpJJLFaMTfy0J/2x6Jinw5/KRDc+G2/oFE3aoxFFjj0HfdRaBRs0QieI0Am+i1FXebcSpQC3bWEMuvVGh0jJHVLW0mNicpUA4AaAp81DVNYy6JLTwMuB1yH6ILnNo8v8IhdpuUKQ8nzQpow/tMSOCYnL2APutebnQr1HjDBLwvFMPWMry12riubm/BviKelFPaiRo8FkyY1oEpjzEDyZr12XZcdna3DQh0sUQzn+vHnB0XEcKnEGNje57mNB1LW38l0nEOKiRrIziIsO4CznjzByrhdQ+NUnujmOg4TP7uQrN4jFkc38COHQ/wBObOFol4lGs3CpR/qblJWZxKPw6cIsLHY3gfmv5IbGsy1KPzjtaHadrqKnfSOjxsjZeGyPbbgwNcz6LN4dw/EY9xEVBwFknb3e9amAyuwccbm5mvjykLUjz4bh/wCTjbTRr3T7snTsz45yarneHcOkn4nFg5wYXF+VwK9PjjayJsbBTWigPYFwHAWniHHoZJZayHOL3NdF6FqDqujj8c1klugnCkgiOF6dUMilWFJEy8qiwWUYbAIp0LIUysZR2SQASJ4OHiDaA8Nt/RSZ5hqq+HP4Efw2+inZ6KkrLxIqht1QsQGBugoqMOZ7SHGh3Q5nHPR7JaIZ20RacGgA17EAupTM1VvogMTkEleYfRDPiZfMPomdiBoNVEzNNboUx3CSvMPooPDsotyk6UFRcbASipcV5eGYoj/5O9F5U7qV61jWeJhJWH+5hH8LyWXl0KhzeDfEExKVpioEWMFJ4eKid4hj5gMzRZC6HE4kRy5RjWQ8t5ZIswPttcxA4ieMgkU8aj3rosRiiyYj78yHQcskOYH5p8abE/jCQfqeFy/5R0Vn8SiOTN4eBZ3MLtT8lbE3iaHEcLl9jmZSVWxUctWOHYQD9zDfotejMEmjRUmW57WtFkmqCedpbIbQ2yGN7Xs8zTYU76n+9ur4S5zY4mvYf2lpC1ntEUb3tcQWAksWdwni8E/naBI0A0ruLxEWIglceXMNSE8r0NyY9OXjnImEsTskgdYI6FejcA4mOJYFr36Ss5ZK7rzNzG5i4bjr3XRfY7Hfd8cYnOpkwy67Zui6MK8/fbveZMR9U4TlWGojQqfN0KinBpElPz90k+ZJDRT4XXDxnpkb6KdhPhW/loh3YPRQe3K4i0RHhDXA2UCV1yaJmmk3VARoBYJU3VrYGihG7LGm8QHe7QonIBJ0QyGnonDt/emvVAUXAA6AJk53TLCFMfw3LyHGm5pK2zFeuYkHwnm9aK8fmfmkcP7r1UOa9DfDA6JrTRlLqubZE4v6rK/cPVdBPOY5j+ZfGRXL4Gdu3dc/ALmZ/kPVbk2KZFNI046eE35WxgjYJ8abExxQf5sVgH+yWEtKFJGPMyPh4PRzJi1L74x7qbj2v+Nhr9EpHxhuZzsA7/jOWqihj+fVz2F23LJmWY+wVqzvjcDT8OB08PDkFUJWakEAEbpU8ohDIWPGpHuKuSyyugdmleR71mnlKsQTnw3REA5hVlbQTOxbw7w6MV00R4HmORrmmiDaBgBGGObLd7gtRY25nhjfMTQtdPHei7eq4OUTYeOQEHM0Gx7lYVDhOHdhMDBA5+ZzG0Sr4XQelSVJwksnTJJ0ltg//9k=");}
+		</style>
+    </head>
+    <body>
+        <div id="I"> hello
+        </div>
+        <hr/>
+        <input type="button" value="Alertinline" onclick="alert('hey')"/>
+        <input type="button" value="confirminline" onclick="confirm('hey')"/>
+        <input type="button" value="promptinline" onclick="prompt('hey')"/><hr/>
+
+        <input type="button" value="Alertinternal" onclick="alertinline()"/>
+        <input type="button" value="confirminternal" onclick="confirminline('hey')"/>
+        <input type="button" value="promptinternal" onclick="promptinline('hey')"/><hr/>
+
+        <input type="button" value="Alert External" onclick="demoExternalAlert()" />&nbsp;&nbsp;
+		<input type="button" value="Confirm External" onclick="demoExternalConfirm()" />&nbsp;&nbsp;
+		<input type="button" value="Prompt External" onclick="demoExternalPrompt()" />&nbsp;&nbsp;
+		<hr/>
+
+        <input type="button" value="Alert box color" onclick="divBGGray()"/>
+        <input type="button" value="prompt bg color" onclick="bgcolor()"/><hr/>
+
+        <input type="button" value="Alert" onclick="dynamicalert()"/>
+        <input type="button" value="confirm" onclick="divdynamic()"/></body><hr/>
+
+        <input type="color" id="CP1" onchange="bodyBGCP1()" />&nbsp;&nbsp;
+		<input type="color" id="CP2" onchange="divBGCP2()" />&nbsp;&nbsp;
+        
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html media queries</title>
+
+    <style>
+        body{
+            font: 14px Georgia,serif;
+            background: #ccc;
+        }
+       /* article,aside,figure,footer,header,hgroup,menu,
+        nav,section{
+            display: block;
+        }*/
+        h3{
+            margin: 0 0 8px 0;
+        }
+        p{
+            margin: 0 0 20px 0;
+        }
+        #fluid-wrap{
+            width: 70%;
+            margin: 60px auto;
+            padding: 20px;
+            background: #ccc;
+            overflow: hidden;
+        }
+        #sidebar{
+            width: 35%;
+            float: left;
+        }
+        #sidebar ul li a {
+            color: #900;
+            text-decoration: none;
+            display: block;
+        }
+        @media all and (min-width: 1001px){
+            #sidebar ul li a:after {
+                content: "("att(data-email)")";
+            }
+        }
+        @media all and (max-width: 1010px) and (min-width: 700px){
+            #sidebar ul li a::before{
+                content: "(email)";
+                padding: 10px;
+                font-size: smaller;
+                font-style: italic;
+                color: rgb(229, 176, 106);
+            }
+        }
+        #main-content{
+            width: 65%;
+            float: right;
+        }
+
+
+
+
+    </style>
+</head>
+<body style="background-color: white;">
+    <div id="fluid-wrap">
+        <div id="sidebar">
+    <h3>Team kd group:</h3>
+    <ul id="nav">
+        <li><a data-email="smit@gmail.com" href="#">Manan</a></li>
+        <li><a data-email="smit@gmail.com" href="#">Chagan</a></li>
+        <li><a data-email="smit@gmail.com" href="#">Magan</a></li>
+        <li><a data-email="smit@gmail.com" href="#">Chaman</a></li>
+    </ul>
+</div>
+    <div id="main-content">
+      <p>Hey I am Smit Prajapati and I am currently studying in Aditya Silver oak university and I will be creating a startup soon on a social media app and i belive it will be succesfull</p>
+
+    <div class="ds">
+
+    </div>
+    <div class="da">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+    </div>
+    <div class="dq">
+        <div class="cd"></div>
+        <div class="cd"></div>
+        <div class="cd"></div>
+        <div class="cd"></div>
+    </div>
+</body>
+</html>
