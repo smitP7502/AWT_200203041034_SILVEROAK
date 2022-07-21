@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>write a program for performing keypress,blur and click events validation  in jquery</p>
+
+<form id="myForm">
+  <input type="text" id="myInput">
+</form>
+
+<script>
+var x = document.getElementById("myForm");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+  document.getElementById("myInput").style.backgroundColor = "yellow";  
+}
+
+function myBlurFunction() {
+  document.getElementById("myInput").style.backgroundColor = "";  
+}
+</script>
+
+</body>
+</html>
